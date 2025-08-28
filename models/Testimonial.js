@@ -19,7 +19,7 @@ const testimonialSchema = new mongoose.Schema(
     },
     serviceType: {
       type: String,
-      enum: ["wedding", "corporate", "social", "catering", "all"],
+      enum: ["wedding", "corporate", "social", "catering", "home", "all"],
       default: "all",
     },
     eventDate: Date,

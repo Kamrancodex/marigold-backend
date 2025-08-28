@@ -44,10 +44,6 @@ const teamMemberSchema = new mongoose.Schema(
       trim: true,
       maxlength: [500, "Bio cannot exceed 500 characters"],
     },
-    yearsExperience: {
-      type: Number,
-      min: 0,
-    },
     specialties: [
       {
         type: String,
@@ -66,5 +62,3 @@ teamMemberSchema.index({ isActive: 1 });
 teamMemberSchema.index({ hasPhoto: 1 });
 
 module.exports = mongoose.model("TeamMember", teamMemberSchema);
-
-

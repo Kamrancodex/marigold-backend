@@ -13,6 +13,8 @@
     "seed:social": "node scripts/seedSocialService.js",
     "seed:venues": "node scripts/seedVenues.js",
     "seed:exclusive": "node scripts/seedExclusiveLocations.js",
+    "seed:home-testimonials": "node scripts/seedHomeTestimonials.js",
+    "migrate:remove-years": "node scripts/removeYearsExperience.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

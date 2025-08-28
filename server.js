@@ -45,7 +45,7 @@ const corsOptions = {
   origin: true, // Allow all origins for now
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: "*",
-  credentials: false, // Disable credentials to allow wildcard
+  credentials: true, // Disable credentials to allow wildcard
   optionsSuccessStatus: 200,
 };
 

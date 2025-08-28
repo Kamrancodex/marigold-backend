@@ -10,7 +10,7 @@ const testimonialValidation = [
   body("clientNames").notEmpty().withMessage("Client names are required"),
   body("content").notEmpty().withMessage("Content is required"),
   body("serviceType")
-    .isIn(["wedding", "corporate", "social", "catering", "all"])
+    .isIn(["wedding", "corporate", "social", "catering", "home", "all"])
     .withMessage("Invalid service type"),
 ];
 
