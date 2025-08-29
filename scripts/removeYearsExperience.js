@@ -26,3 +26,4 @@ const removeYearsExperienceField = async () => {
 
 // Run the migration
 removeYearsExperienceField();
+
