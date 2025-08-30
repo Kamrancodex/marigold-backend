@@ -6,6 +6,7 @@ const {
   validateContact,
   handleValidationErrors,
 } = require("../middleware/validation");
+const { sendContactFormEmails } = require("../lib/emailService");
 
 // @route   POST /api/contacts
 // @desc    Submit contact form (Public)
@@ -23,6 +24,29 @@ router.post("/", validateContact, handleValidationErrors, async (req, res) => {
     });
 
     await contact.save();
+
+    // Send emails (don't wait for them to complete - fire and forget)
+    sendContactFormEmails(contact.toObject())
+      .then((emailResults) => {
+        console.log("Email sending results:", emailResults);
+
+        // Log any email failures for monitoring
+        if (!emailResults.adminNotification?.success) {
+          console.error(
+            "Admin notification failed:",
+            emailResults.adminNotification?.error
+          );
+        }
+        if (!emailResults.thankYou?.success) {
+          console.error(
+            "Thank you email failed:",
+            emailResults.thankYou?.error
+          );
+        }
+      })
+      .catch((error) => {
+        console.error("Email sending error:", error);
+      });
 
     res.status(201).json({
       success: true,

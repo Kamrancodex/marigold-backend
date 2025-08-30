@@ -26,8 +26,8 @@ Marigold is committed to providing excellent service along with our food and eve
 
 Together, our team provides multiple layers of quality control and cohesion in order to elevate and conduct your event effortlessly.`,
   heroImage: {
-    url: "/events-3.avif",
-    alt: "Social gathering with professional catering setup",
+    url: "/Services, social HEADER.jpg",
+    alt: "Elegant social event with champagne glasses and catering setup",
     key: "social-hero",
   },
   images: [

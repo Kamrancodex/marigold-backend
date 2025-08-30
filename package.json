@@ -39,6 +39,7 @@
     "morgan": "^1.10.0",
     "multer": "^2.0.2",
     "node-fetch": "^2.7.0",
+    "nodemailer": "^7.0.6",
     "uploadthing": "^7.7.4"
   },
   "devDependencies": {
