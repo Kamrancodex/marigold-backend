@@ -16,10 +16,11 @@ const validateContact = [
     .normalizeEmail(),
 
   body("phone")
-    .optional()
     .trim()
-    .isLength({ max: 20 })
-    .withMessage("Phone number cannot exceed 20 characters"),
+    .notEmpty()
+    .withMessage("Phone number is required")
+    .isLength({ min: 10, max: 20 })
+    .withMessage("Phone number must be between 10 and 20 characters"),
 
   body("eventType")
     .notEmpty()

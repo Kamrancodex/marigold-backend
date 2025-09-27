@@ -18,7 +18,7 @@ const socialServiceData = {
   title: "Social Event Catering",
   slug: "social-events",
   subtitle: "Creating memorable gatherings through exceptional food",
-  description: `Exceptional catering services for birthdays, anniversaries, holiday parties, and all social gatherings in Cleveland, Ohio.
+  description: `Exceptional catering services for birthdays, anniversaries, holiday parties, and all social gatherings in Northeast Ohio.
 
 Excellent food and a beautiful setting are important, but quality service truly sets the guest experience apart. Besides special in-depth training, providing exceptional service comes down to the staff-to-guest ratio. These numbers determine important event factors, such as how quickly food is served, the length of bar lines and the efficiency of passing hors d'oeuvres.
 
@@ -66,7 +66,7 @@ Together, our team provides multiple layers of quality control and cohesion in o
   ],
   staffRoles: [
     "Chefs & Cooks – to prepare, cook and plate up/serve the excellent food",
-    "Event Manager(s) – typically the Event Planner you worked with, to oversee the entire event/vision, as well as staff, guests and vendors",
+    "Event Manager(s) – typically the sales manager you worked with, to oversee the entire event/vision, as well as staff, guests and vendors",
     "Server Captains – service leaders, keeping a close eye on and directing staff in regards to food & beverage",
     "Servers – to carry plates, clear, refill waters and generally service guests",
     "Bartenders – to, of course, serve drinks!",
@@ -103,14 +103,15 @@ Together, our team provides multiple layers of quality control and cohesion in o
   },
   seo: {
     metaTitle:
-      "Social Event Catering | Birthday, Anniversary & Holiday Catering Cleveland",
+      "Social Event Catering | Birthday, Anniversary & Holiday Catering Northeast Ohio",
     metaDescription:
-      "Exceptional catering services for birthdays, anniversaries, holiday parties, and all social gatherings in Cleveland, Ohio. Professional service and delicious food.",
+      "Exceptional catering services for birthdays, anniversaries, holiday parties, and all social gatherings in Northeast Ohio. Professional service and delicious food.",
     keywords: [
-      "social event catering Cleveland",
+      "social event catering Northeast Ohio",
       "birthday party catering",
       "anniversary catering",
       "holiday party catering",
+      "bar mitzvah catering",
       "graduation party catering",
       "family reunion catering",
       "social gathering catering",
@@ -152,6 +153,14 @@ const socialEventTypesData = [
     description:
       "Bring everyone together around the table with food that pleases all generations.",
     displayOrder: 4,
+    isActive: true,
+    serviceType: "social",
+  },
+  {
+    title: "Bar Mitzvahs",
+    description:
+      "Celebrate this important milestone with elegant catering that honors tradition while creating lasting memories.",
+    displayOrder: 5,
     isActive: true,
     serviceType: "social",
   },

@@ -17,7 +17,7 @@ const corporateServiceData = {
   title: "Corporate Event Catering",
   slug: "corporate-events",
   subtitle: "Elevating business functions with exceptional dining",
-  description: `Professional catering services for corporate meetings, conferences, galas, and business events in Cleveland, Ohio. From intimate business lunches to large corporate galas, we provide exceptional catering services that will impress your clients and colleagues.
+  description: `Professional catering services for corporate meetings, conferences, galas, and business events in Northeast Ohio. From intimate business lunches to large corporate galas, we provide exceptional catering services that will impress your clients and colleagues.
 
 Our corporate catering menu features fresh, high-quality ingredients prepared by our experienced culinary team. We offer flexible service options including full-service catering, drop-off catering, and corporate to-go menus.
 
@@ -93,11 +93,11 @@ Whether you're hosting a board meeting, company retreat, trade show, or annual c
   },
   seo: {
     metaTitle:
-      "Corporate Event Catering | Professional Business Catering Cleveland",
+      "Corporate Event Catering | Professional Business Catering Northeast Ohio",
     metaDescription:
-      "Professional corporate catering services in Cleveland, Ohio. Business lunches, meetings, conferences, galas. Exceptional food and service for your corporate events.",
+      "Professional corporate catering services in Northeast Ohio. Business lunches, meetings, conferences, galas. Exceptional food and service for your corporate events.",
     keywords: [
-      "corporate catering Cleveland",
+      "corporate catering Northeast Ohio",
       "business event catering",
       "conference catering",
       "office catering",

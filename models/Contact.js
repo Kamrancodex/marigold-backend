@@ -20,7 +20,9 @@ const contactSchema = new mongoose.Schema(
     },
     phone: {
       type: String,
+      required: [true, "Phone number is required"],
       trim: true,
+      minlength: [10, "Phone number must be at least 10 characters"],
       maxlength: [20, "Phone number cannot exceed 20 characters"],
     },
     eventType: {
