@@ -44,6 +44,10 @@ const teamMemberSchema = new mongoose.Schema(
       trim: true,
       maxlength: [500, "Bio cannot exceed 500 characters"],
     },
+    yearsExperience: {
+      type: Number,
+      min: [0, "Years of experience cannot be negative"],
+    },
     specialties: [
       {
         type: String,

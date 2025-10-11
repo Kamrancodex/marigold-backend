@@ -12,6 +12,12 @@ const removeEmptyStrings = (req, _res, next) => {
       if (typeof req.body[key] === "string" && req.body[key].trim() === "") {
         delete req.body[key];
       }
+      // Convert empty string numbers to undefined
+      if (key === "yearsExperience" || key === "displayOrder") {
+        if (req.body[key] === "" || req.body[key] === null) {
+          delete req.body[key];
+        }
+      }
     });
   }
   next();
@@ -219,6 +225,7 @@ router.post(
   "/",
   verifyToken,
   requireAdmin,
+  removeEmptyStrings,
   validateTeamMemberCreate,
   handleValidationErrors,
   async (req, res) => {
@@ -275,6 +282,7 @@ router.put(
   "/:id",
   verifyToken,
   requireAdmin,
+  removeEmptyStrings,
   validateTeamMemberUpdate,
   handleValidationErrors,
   async (req, res) => {
